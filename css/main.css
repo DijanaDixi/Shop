@@ -181,7 +181,8 @@ a {
     width: 130px;
     height: 60px;
     display: block;
-    border: 3px solid white; }
+    border: 3px solid white;
+    z-index: 5; }
   .frame::before {
     border-bottom: none;
     border-right: none;
@@ -219,7 +220,7 @@ a {
   .intro-header #intro-slider {
     display: block; }
     .intro-header #intro-slider .carousel-indicators {
-      bottom: 30px; }
+      bottom: 0px; }
   .intro-header h2 {
     padding: 30px 0;
     width: 620px;
@@ -234,6 +235,41 @@ a {
       .intro-header h2 span {
         font-size: 96px; }
     .intro-header #intro-slider .carousel-indicators {
-      bottom: 40px; } }
+      bottom: 10px; } }
+.products-section .products-title {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 20px; }
+  .products-section .products-title::after {
+    content: " ";
+    width: 95px;
+    height: 5px;
+    display: block;
+    background-image: url("../image/decoration-line.png");
+    margin: 30px auto 0; }
+.products-section p {
+  color: #999;
+  text-align: center;
+  margin-bottom: 15px; }
+.products-section .collections-holder a {
+  font-size: 26px;
+  text-transform: uppercase;
+  display: block;
+  color: #fff;
+  margin-bottom: 15px; }
+  .products-section .collections-holder a img {
+    opacity: .8; }
+  .products-section .collections-holder a span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center; }
+.products-section .collections-holder .frame::before, .products-section .collections-holder .frame::after {
+  width: 70px;
+  height: 40px;
+  border-width: 2px; }
 
 /*# sourceMappingURL=main.css.map */
