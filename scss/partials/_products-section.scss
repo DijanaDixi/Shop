@@ -47,9 +47,9 @@
         }
     }
     .products-categories {
-        list-style: none;
+       
         padding: 0;
-        margin-top: 0px;
+       
         margin-bottom: 30px;
         text-align: center;
         li{
@@ -84,14 +84,16 @@
            overflow:hidden;
            >a{
                display: block;
+               -webkit-transition: all .3s;
+               -moz-transition: all .3s;
+               transition: all .3s;
            }
            .hover-list{
                position: absolute;
                bottom: 0;
                left:0;
                width: 100%; //celom duzinom elementa
-               list-style: none;
-               margin: 0;
+              
                padding:19px  0;
                //////////////// lista
                text-align: center;
@@ -121,5 +123,29 @@
                text-transform: uppercase;
            }
        }
+       .color-picker{
+           padding: 0 15px;
+           li{
+               float: left;
+               margin-right: 5px;
+               &:last-child{
+                   margin-right: 0;
+               }
+               a{
+                   display: block;
+                   width: 16px;
+                   height: 16px;
+                   text-indent: -9999px;
+               }
+           }
+       }
+       &:hover{
+           .product-image-holder{
+               >a{
+                   opacity: .6; //60%
+               }
+           }
+       }
+
     }
 }

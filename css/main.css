@@ -151,6 +151,11 @@ a {
 @media (min-width: 1200px) {
   .main-header .logo {
     width: 104px; } }
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
 .intro-header {
   position: relative;
   margin-bottom: 40px; }
@@ -236,6 +241,27 @@ a {
         font-size: 96px; }
     .intro-header #intro-slider .carousel-indicators {
       bottom: 10px; } }
+.color-picker .purple {
+  background-color: #7c81ea; }
+.color-picker .green {
+  background-color: #5eb09b; }
+.color-picker .dark-gray {
+  background-color: #333; }
+.color-picker .red {
+  background-color: #cc0000; }
+.color-picker .yellow {
+  background-color: #ffce67; }
+.color-picker .blue {
+  background-color: #389ec5; }
+.color-picker .orange {
+  background-color: #f90; }
+.color-picker .light-blue {
+  background-color: #85c3dc; }
+.color-picker .beidge {
+  background-color: beige; }
+.color-picker .aqua {
+  background-color: #ACDACF; }
+
 .products-section .products-title {
   text-align: center;
   font-size: 30px;
@@ -272,9 +298,7 @@ a {
   height: 40px;
   border-width: 2px; }
 .products-section .products-categories {
-  list-style: none;
   padding: 0;
-  margin-top: 0px;
   margin-bottom: 30px;
   text-align: center; }
   .products-section .products-categories li {
@@ -300,14 +324,15 @@ a {
     position: relative;
     overflow: hidden; }
     .products-section .product .product-image-holder > a {
-      display: block; }
+      display: block;
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      transition: all .3s; }
     .products-section .product .product-image-holder .hover-list {
       position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;
-      list-style: none;
-      margin: 0;
       padding: 19px  0;
       text-align: center;
       background-color: rgba(133, 195, 220, 0.95); }
@@ -327,5 +352,19 @@ a {
       float: right;
       color: #000;
       text-transform: uppercase; }
+  .products-section .product .color-picker {
+    padding: 0 15px; }
+    .products-section .product .color-picker li {
+      float: left;
+      margin-right: 5px; }
+      .products-section .product .color-picker li:last-child {
+        margin-right: 0; }
+      .products-section .product .color-picker li a {
+        display: block;
+        width: 16px;
+        height: 16px;
+        text-indent: -9999px; }
+  .products-section .product:hover .product-image-holder > a {
+    opacity: .6; }
 
 /*# sourceMappingURL=main.css.map */
