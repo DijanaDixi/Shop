@@ -90,8 +90,8 @@
                 position: absolute;
                 bottom: 0;
                 left: 0;
-                width: 100%; //celom duzinom elementa
-                padding: 19px 0; //////////////// lista
+                width: 100%; 
+                padding: 19px 0; 
                 text-align: center;
                 background-color: transparentize(#85c3dc, .05);
                 li {
@@ -160,7 +160,7 @@
             }
         }
     }
-    .article-clear:nth-of-type(2n+3){ //svaki prvi zauzima svoje mesto(svaki drugi,kreni od treceg i zadaj mu
+    .article-clear:nth-of-type(2n+3){ 
               clear: both;
     }
 }
@@ -233,7 +233,7 @@
             }
         }
     }
-    .article-clear:nth-of-type(2n+3){ //ponistavanje
+    .article-clear:nth-of-type(2n+3){ 
         clear: none;
     }
     .article-clear:nth-of-type(3n+4){
@@ -252,7 +252,7 @@
             margin-bottom: 50px;
         }
     }
-    .article-clear:nth-of-type(3n+4){ //ponistavanje
+    .article-clear:nth-of-type(3n+4){ 
         clear: none;
     }
     .article-clear:nth-of-type(4n+5){ 
